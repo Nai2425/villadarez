@@ -1,0 +1,60 @@
+.animate-blink {
+    animation: blink-animation 0.8s steps(1, end) infinite;
+  }
+  
+  @keyframes blink-animation {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circular-border {
+    border-radius: 50%;
+    border: 5px solid white;
+    padding: 5px;
+    width: 230px; /* Adjust size as needed */
+    height: 230px; /* Adjust size as needed */
+    object-fit: cover; /* Ensures the image fits within the circular border */
+    margin-bottom: 10px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Space between cards */
+    justify-content: center;
+  }
+  
+  .prod-card {
+    background-color: #2a2a2a; /* Dark background for the card */
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px; /* Fixed width for each card */
+    color: white; /* White text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+    transition: transform 0.2s;
+  }
+  
+  .prod-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+  }
+  
+  .prod-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+  }
+  
+  .prod-card p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+  
+    
